@@ -31,6 +31,7 @@ body {
   font-family: var(--font-style), sans-serif;
   min-height: 100dvh;
   margin: 0 auto;
+  align-self: center;
 }
 
 .app-container {
@@ -40,6 +41,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 ::-webkit-scrollbar {

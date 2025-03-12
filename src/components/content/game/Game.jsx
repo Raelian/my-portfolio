@@ -17,9 +17,9 @@ const games = [
                     
                     The project is still a work in progress but the full demo is available!`,
         image: [
-                "/image/game-images/dungeon-rogue/dungeon_rogue_1.png",
-                "/image/game-images/dungeon-rogue/dungeon_rogue_2.png",
-                "/image/game-images/dungeon-rogue/dungeon_rogue_3.png"
+                dungeonRogue1,
+                dungeonRogue2,
+                dungeonRogue3
             ],
         link: "https://raelian.itch.io/dungeon-rogue"
     }

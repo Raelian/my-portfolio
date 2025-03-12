@@ -1,5 +1,9 @@
 import React, {useState} from "react";
 import './Web.scss';
+import rpsImage from "/image/web-images/rps_game/rps_game.png";
+import pricingComponent from "/image/web-images/pricing_component/pricing_component.png";
+import sunnysideSite from "/image/web-images/sunnyside/sunnyside.png";
+import otherProjects from "/image/web-images/landing_pages/landing_pages.png";
 
 const projects = [
     {
@@ -10,21 +14,21 @@ const projects = [
         and an advanced version that includes Lizard and Spock. Additionally, I implemented score persistence, 
         ensuring that scores remain even after refreshing the browser. The game is also fully responsive, 
         making it playable on both desktop and mobile devices.`,
-        image: "/image/web-images/rps_game/rps_game.png",
+        image: rpsImage,
         link: "https://raelian.github.io/rock-paper-scissors-master/"
     },
     {
         id: 2,
         title: "Pricing component",
         description: `One of my earliest projects that helped me develop a strong foundation in HTML, CSS, SASS, and JavaScript, laying the groundwork for my growth as a front end developer.`,
-        image: "/image/web-images/pricing_component/pricing_component.png",
+        image: pricingComponent,
         link: "https://raelian.github.io/interactive-pricing-component/?input=2"
     },
     {
         id: 3,
         title: "Sunnyside",
         description: `One of my earlisest responsive landing pages with a fully functional navigation bar and integrated social media links.`,
-        image: "/image/web-images/sunnyside/sunnyside.png",
+        image: sunnysideSite,
         link: "https://raelian.github.io/sunnyside-agency-landing-page/"
     },
     {
@@ -36,7 +40,7 @@ const projects = [
                       a deeper understanding of key concepts such as web responsiveness, accessibility, 
                       SASS, and methodologies like BEM, which helped enhanced both the structure 
                       and maintainability of my code.`,
-        image: "/image/web-images/landing_pages/landing_pages.png",
+        image: otherProjects,
         link: "https://www.frontendmentor.io/profile/Raelian/solutions"
     },
 ];
