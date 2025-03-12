@@ -7,7 +7,7 @@ import './App.scss'
 
 function App() {
   return (
-    <Router basename ="my-portfolio">
+    <Router basename ="/my-portfolio">
       <div className="app-container">
         <Header />
         <Navigation />
