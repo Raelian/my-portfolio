@@ -1,0 +1,168 @@
+//SASS mixin for btns
+@mixin button-style($font-size) {
+    background-color: transparent;
+    list-style: none;
+    font-size: $font-size;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 5px;
+    margin: 0 10px;
+    color: var(--text-color);
+}
+
+@mixin active-nav-btn {
+    color: var(--nav-text-hover-color);
+    border-color: var(--nav-text-hover-color);
+    border-radius: 10px;
+}
+
+@mixin active-triangle {
+    border-top: 10px solid var(--nav-text-hover-color);
+    transform: rotate(0deg);
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+    .navbar-item {
+        position: relative;
+
+        .navbar-btn {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+        
+            .btn-link{
+                @include button-style(30px);
+                border-bottom: 6px solid var(--text-color);
+                border-radius: 4px;
+                transition: border-radius .3s ease, color .3s ease;
+            }
+
+            .btn-link.active-nav {
+                @include active-nav-btn();
+            }
+
+            .btn-link.inactive-nav {    
+                &:hover {
+                    @include active-nav-btn();
+                }
+            }
+        }
+
+        .dropdown-btn {
+            @include button-style(30px);
+            display: flex;
+            flex-direction: row;
+            border-bottom: 6px solid var(--text-color);
+            border-radius: 4px;
+            
+            .triangle {
+                position: relative;
+                top: 15px;
+                left: 5px;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 10px solid var(--text-color);
+                transform: rotate(90deg);
+                transition: transform .3s ease;
+            }   
+        }
+
+        .dropdown-btn.active-nav {
+            @include active-nav-btn();
+
+            .triangle {
+                border-top: 10px solid var(--nav-text-hover-color);
+                transform: rotate(0deg);
+            }
+        }
+
+        .dropdown-btn.inactive-nav {    
+            &:hover {
+                @include active-nav-btn(); 
+            }
+
+            &:hover .triangle {
+                border-top: 10px solid var(--nav-text-hover-color);
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: max-content;
+    min-width: 150px;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255, .4);
+    z-index: 1;
+
+    .dropdown-btn-link {
+        @include button-style(20px);
+        width: 100%;
+        text-align: left;
+        padding-left: 0px;
+        transition: padding-left .3s ease, color .3s ease;
+    }
+
+    .dropdown-btn-link.active-drop-link{
+        color: var(--nav-text-hover-color);
+        padding-left: 12px;
+
+        &::before {
+            position: absolute;
+            content: '>';
+            left: 8px;
+            color: var(--nav-symbol-color);
+            opacity: 1;
+        }
+    }
+
+    .dropdown-btn-link.inactive-drop-link{
+        &:before {
+            position: absolute;
+            content: '>';
+            left: 8px;
+            color: var(--nav-symbol-color);
+            opacity: 0;
+            transition: opacity .3s ease;
+        }
+
+        &:hover {
+            color: var(--nav-text-hover-color);
+            padding-left: 12px;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            transition: opacity .3s ease .1s;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .dropdown-menu {
+        left: -30px;
+    }
+}

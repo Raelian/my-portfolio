@@ -1,0 +1,134 @@
+.game-container {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    border-radius: 12px;
+    max-width: inherit;
+
+    .game-btns-container{
+        background-color: var(--bg-content-color);
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+
+        h3 {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            border-right: 3px solid var(--bg-color);
+            padding: 5px 10px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            gap: 10px;
+
+            button {
+                position: relative;
+                border: none;
+                color: var(--text-color);
+                border-radius: 6px;
+                background-color: var(--bg-content-color);
+                cursor: pointer;
+                top: 0;
+                padding: 10px 5px;
+                font-weight: bold;
+                transition: box-shadow .3s ease, top .3s ease, color .3s ease, background-color .3s ease;
+                z-index: 0;
+    
+                &:hover {
+                    box-shadow: 2px 2px 5px rgb(0, 0, 0, .5);
+                    top: -4px;
+                    background-color: var(--bg-color);
+                    color: var(--nav-text-hover-color);
+                }
+
+                &:active {
+                    top: -1px;
+                }
+            }
+        }
+    }
+
+    .games-section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        background-color: var(--text-color);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        padding: 10px;
+        flex: 4;
+
+        h4 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: justify;
+            white-space: pre-line;
+            line-height: 20px;
+            margin-bottom: 8px;
+
+            &:first-of-type {
+                text-indent: 30px;
+            }
+        }
+
+        .image-change-container{
+            display: flex;
+            flex-direction: row;    
+            justify-content: space-between;
+            width: 100%;
+
+            button {
+                position: relative;
+                background-color: transparent;
+                width: 100px;
+                height: 30px;
+                font-size: 25px;
+                border: 1px solid black;
+                border-radius: 6px;
+                cursor: pointer;
+                box-shadow: 2px 2px 6px rbg(0, 0, 0, .5);
+                transition: color .3s ease, background-color .3s ease, border-color .3s transparent;
+
+                &:hover {
+                    color: var(--nav-text-hover-color);
+                    background-color: var(--bg-color);
+                    border-color: transparent;
+                }
+
+                &:active {
+                    transform: scale(.95);
+                }
+            }
+        }
+
+        a {
+            height: auto;
+
+            img {
+                position: relative;
+                top: 0;
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+                transition: box-shadow .3s ease, top .3s ease;
+
+                &:hover {
+                    box-shadow: 2px 2px 5px rgb(0, 0, 0, .5);
+                    top: -6px;
+                }
+            }
+        }
+    }
+}

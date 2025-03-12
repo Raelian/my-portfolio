@@ -1,0 +1,117 @@
+.game-container {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  border-radius: 12px;
+  max-width: inherit;
+}
+.game-container .game-btns-container {
+  background-color: var(--bg-content-color);
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.game-container .game-btns-container h3 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border-right: 3px solid var(--bg-color);
+  padding: 5px 10px;
+}
+.game-container .game-btns-container ul {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 10px;
+}
+.game-container .game-btns-container ul button {
+  position: relative;
+  border: none;
+  color: var(--text-color);
+  border-radius: 6px;
+  background-color: var(--bg-content-color);
+  cursor: pointer;
+  top: 0;
+  padding: 10px 5px;
+  font-weight: bold;
+  transition: box-shadow 0.3s ease, top 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  z-index: 0;
+}
+.game-container .game-btns-container ul button:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  top: -4px;
+  background-color: var(--bg-color);
+  color: var(--nav-text-hover-color);
+}
+.game-container .game-btns-container ul button:active {
+  top: -1px;
+}
+.game-container .games-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: var(--text-color);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 10px;
+  flex: 4;
+}
+.game-container .games-section h4 {
+  font-size: 24px;
+}
+.game-container .games-section p {
+  font-size: 16px;
+  text-align: justify;
+  white-space: pre-line;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.game-container .games-section p:first-of-type {
+  text-indent: 30px;
+}
+.game-container .games-section .image-change-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.game-container .games-section .image-change-container button {
+  position: relative;
+  background-color: transparent;
+  width: 100px;
+  height: 30px;
+  font-size: 25px;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rbg(0, 0, 0, 0.5);
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s transparent;
+}
+.game-container .games-section .image-change-container button:hover {
+  color: var(--nav-text-hover-color);
+  background-color: var(--bg-color);
+  border-color: transparent;
+}
+.game-container .games-section .image-change-container button:active {
+  transform: scale(0.95);
+}
+.game-container .games-section a {
+  height: auto;
+}
+.game-container .games-section a img {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease, top 0.3s ease;
+}
+.game-container .games-section a img:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  top: -6px;
+}/*# sourceMappingURL=Game.css.map */
