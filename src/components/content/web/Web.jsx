@@ -1,15 +1,25 @@
 import React, {useState} from "react";
 import './Web.scss';
 import rpsImage from "/image/web-images/rps_game/rps_game.png";
-import pricingComponent from "/image/web-images/pricing_component/pricing_component.png";
-import sunnysideSite from "/image/web-images/sunnyside/sunnyside.png";
+import spaceTourism from "/image/web-images/space_tourism/space_tourism.png";
 import otherProjects from "/image/web-images/landing_pages/landing_pages.png";
 
 const projects = [
     {
         id: 1,
+        title: "Space tourism",
+        description: `A single page space tourism challenge made with React.
+        One of the more interesting projects I worked on, this Frontend Mentor challenge
+        came with Figma files which proved to be invaluable when creating the landing page.
+        The page is responsive and can be viewed on mobile, tablet and desktop and I took 
+        a bit of liberty with certain animations.`,
+        image: spaceTourism,
+        link: "https://raelian.github.io/space-tourism/"
+    },
+    {
+        id: 2,
         title: "RPS game",
-        description: `A simple Rock-Paper-Scissors game challenge from Frontend Mentor. 
+        description: `A Rock-Paper-Scissors-Lizard-Spock game challenge from Frontend Mentor. 
         I enhanced the original design by introducing a toggle between the classic Rock-Paper-Scissors mode 
         and an advanced version that includes Lizard and Spock. Additionally, I implemented score persistence, 
         ensuring that scores remain even after refreshing the browser. The game is also fully responsive, 
@@ -18,21 +28,7 @@ const projects = [
         link: "https://raelian.github.io/rock-paper-scissors-master/"
     },
     {
-        id: 2,
-        title: "Pricing component",
-        description: `One of my earliest projects that helped me develop a strong foundation in HTML, CSS, SASS, and JavaScript, laying the groundwork for my growth as a front end developer.`,
-        image: pricingComponent,
-        link: "https://raelian.github.io/interactive-pricing-component/?input=2"
-    },
-    {
         id: 3,
-        title: "Sunnyside",
-        description: `One of my earlisest responsive landing pages with a fully functional navigation bar and integrated social media links.`,
-        image: sunnysideSite,
-        link: "https://raelian.github.io/sunnyside-agency-landing-page/"
-    },
-    {
-        id: 4,
         title: "Other projects",
         description: `My journey started with Frontend Mentor, where I worked on various landing pages. 
                       These early projects helped me build a solid foundation and refine my skills in 
