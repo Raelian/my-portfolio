@@ -3,10 +3,21 @@ import './Web.scss';
 import rpsImage from "/image/web-images/rps_game/rps_game.png";
 import spaceTourism from "/image/web-images/space_tourism/space_tourism.png";
 import otherProjects from "/image/web-images/landing_pages/landing_pages.png";
+import countries from "/image/web-images/countries/countries.png";
 
 const projects = [
     {
         id: 1,
+        title: "Countries API",
+        description: `A web app built with React and TypeScript that fetches and displays 
+        country data using the REST Countries API. Through this project, I learned how to 
+        work with TypeScript and REST APIs while implementing features like search, filtering, 
+        dynamic routing, and dark mode. The Countries API I used can be found here: https://restcountries.com.`,
+        image: countries,
+        link: "https://raelian.github.io/countries-api/"
+    },
+    {
+        id: 2,
         title: "Space tourism",
         description: `A single page space tourism challenge made with React.
         One of the more interesting projects I worked on, this Frontend Mentor challenge
@@ -17,7 +28,7 @@ const projects = [
         link: "https://raelian.github.io/space-tourism/"
     },
     {
-        id: 2,
+        id: 3,
         title: "RPS game",
         description: `A Rock-Paper-Scissors-Lizard-Spock game challenge from Frontend Mentor. 
         I enhanced the original design by introducing a toggle between the classic Rock-Paper-Scissors mode 
@@ -28,7 +39,7 @@ const projects = [
         link: "https://raelian.github.io/rock-paper-scissors-master/"
     },
     {
-        id: 3,
+        id: 4,
         title: "Other projects",
         description: `My journey started with Frontend Mentor, where I worked on various landing pages. 
                       These early projects helped me build a solid foundation and refine my skills in 
