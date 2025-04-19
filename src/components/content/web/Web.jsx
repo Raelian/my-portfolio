@@ -10,8 +10,8 @@ const projects = [
         id: 1,
         title: "Countries API",
         description: `A web app built with React and TypeScript that fetches and displays 
-        country data using the REST Countries API. Through this project, I learned how to 
-        work with TypeScript and REST APIs while implementing features like search, filtering, 
+        country data using the Countries API. Through this project, I learned how to 
+        work with TypeScript and APIs while implementing features like search, filtering, 
         dynamic routing, and dark mode. The Countries API I used can be found here: https://restcountries.com.`,
         image: countries,
         link: "https://raelian.github.io/countries-api/"
