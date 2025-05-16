@@ -1,4 +1,3 @@
-import React from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
 import Header from './components/header/Header.jsx'
 import Navigation from './components/navigation/Navigation.jsx'

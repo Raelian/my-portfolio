@@ -1,4 +1,3 @@
-import React from "react";
 import {FaEnvelope, FaPhone, FaLinkedin} from "react-icons/fa";
 import Flag from 'react-world-flags';
 import './Contact.scss';

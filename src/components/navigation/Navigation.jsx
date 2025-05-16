@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import {animate, AnimatePresence, motion} from "framer-motion";
+import {AnimatePresence, motion} from "framer-motion";
 import './Navigation.scss';
 
 const Navigation = () => {
@@ -95,9 +95,9 @@ const Navigation = () => {
                             <motion.ul
                                 {...(setDropdownAnimationValuesFade())}
                                 className="dropdown-menu"
-                            >   {/* I REMOVED THE SOFTWARE TAB SINCE I HAD NONE TO SHOW */}
+                            >
                                 <li><NavLink to="/web" className={({isActive}) => isActive ? "dropdown-btn-link active-drop-link" : "dropdown-btn-link inactive-drop-link"}>Web Development</NavLink></li>
-                                {/*<li><NavLink to="/software" className={({isActive}) => isActive ? "dropdown-btn-link active-drop-link" : "dropdown-btn-link inactive-drop-link"}>Software Development</NavLink></li>*/}
+                                <li><NavLink to="/software" className={({isActive}) => isActive ? "dropdown-btn-link active-drop-link" : "dropdown-btn-link inactive-drop-link"}>Software Development</NavLink></li>
                                 <li><NavLink to="/game" className={({isActive}) => isActive ? "dropdown-btn-link active-drop-link" : "dropdown-btn-link inactive-drop-link"}>Game Development</NavLink></li>
                             </motion.ul>
                         )}

@@ -1,10 +1,9 @@
-import React, {useEffect} from "react";
 import {Routes, Route} from "react-router-dom";
-import {AnimatePresence, motion} from "framer-motion";
+import {motion} from "framer-motion";
 import About from "./about/About";
 import "./Content.scss";
 import Web from "./web/Web";
-//import Software from "./Software";
+import Software from "./software/Software";
 import Game from "./game/Game";
 import Contact from "./contact/Contact";
 
@@ -21,7 +20,7 @@ const Content = () => {
             <Routes>
                 <Route path="/" element={<About />}/>
                 <Route path="/web" element={<Web />}/>
-                {/*}<Route path="/software" element={<Software />}/>{*/}
+                <Route path="/software" element={<Software />}/>
                 <Route path="/game" element={<Game />}/>
                 <Route path="/contact" element={<Contact />}/>
             </Routes>
